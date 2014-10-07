@@ -1,8 +1,23 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: center; }
 
 a {
-  color: #00B7FF;
-}
+  color: #00B7FF; }
+
+.intro {
+  text-align: center; }
+  .intro h1 {
+    font-size: 60px;
+    font-weight: 100;
+    color: black; }
+  .intro h2 {
+    font-weight: 100; }
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

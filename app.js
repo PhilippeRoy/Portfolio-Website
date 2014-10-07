@@ -8,11 +8,15 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 
+var hbs = require('hbs');
+
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'html');
+app.engine('html', require('hbs').__express);
+hbs.registerPartials(__dirname + '/views/partials');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(__dirname + '/public/favicon.ico'));
@@ -37,6 +41,7 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
+    app.disable('etag');
     app.use(function(err, req, res, next) {
         res.status(err.status || 500);
         res.render('error', {

@@ -29,7 +29,8 @@ a {
 .btn-default {
   color: #333;
   background-color: #fff;
-  border-color: #fff; }
+  border-color: #fff;
+  font-weight: 200; }
 
 #outer {
   position: absolute;

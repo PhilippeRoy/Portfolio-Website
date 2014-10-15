@@ -1,19 +1,31 @@
 body {
-  padding: 50px;
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center; }
 
+h1 {
+  font-size: 60px;
+  font-weight: 100;
+  color: black; }
+
+h2 {
+  font-weight: 100;
+  margin-bottom: 20px; }
+
 a {
-  color: #00B7FF; }
+  color: #333; }
+  a:hover {
+    color: #EE0000;
+    text-decoration: none; }
+  a:visited {
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none; }
 
 .intro {
   text-align: center; }
-  .intro h1 {
-    font-size: 60px;
-    font-weight: 100;
-    color: black; }
-  .intro h2 {
-    font-weight: 100; }
+
+.full {
+  height: 100%; }
 
 .btn-default {
   color: #333;
@@ -21,30 +33,15 @@ a {
   border-color: #fff;
   font-weight: 200; }
 
-#outer {
+.outer, .outer-intro {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%; }
+  height: 100%; }
 
-#table-container {
-  height: 100%;
-  width: 100%;
-  display: table; }
-
-#table-cell {
-  vertical-align: middle;
-  height: 100%;
-  display: table-cell;
-  border: 1px solid #000; }
-
-.outer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70%; }
+.outer-intro {
+  height: 60%; }
 
 .table-container {
   height: 100%;
@@ -54,7 +51,9 @@ a {
 .table-cell {
   vertical-align: middle;
   height: 100%;
-  display: table-cell;
-  border: 1px solid #000; }
+  display: table-cell; }
+
+.owl-wrapper-outer, .owl-wrapper, .owl-item {
+  height: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

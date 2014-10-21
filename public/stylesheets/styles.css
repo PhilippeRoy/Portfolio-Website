@@ -7,7 +7,7 @@ h1 {
   font-weight: 100;
   color: black; }
 
-h2 {
+h2, h3 {
   font-weight: 100;
   margin-bottom: 20px; }
 
@@ -21,39 +21,25 @@ a {
   a:focus {
     text-decoration: none; }
 
-.intro {
-  text-align: center; }
-
-.full {
-  height: 100%; }
-
-.btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #fff;
+nav {
+  text-align: center;
   font-weight: 200; }
+  nav nav a {
+    margin-top: 12px; }
+  nav a:hover {
+    color: #000;
+    font-weight: 400; }
+  nav .navitem {
+    margin-top: 30px; }
 
-.outer, .outer-intro {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
+.intro {
+  margin-top: 25%; }
 
-.outer-intro {
-  height: 60%; }
+.nopadding {
+  padding: 0 !important;
+  margin: 0; }
 
-.table-container {
-  height: 100%;
-  width: 100%;
-  display: table; }
-
-.table-cell {
-  vertical-align: middle;
-  height: 100%;
-  display: table-cell; }
-
-.owl-wrapper-outer, .owl-wrapper, .owl-item {
-  height: 100%; }
+#profile {
+  margin-top: 30px; }
 
 /*# sourceMappingURL=styles.css.map */

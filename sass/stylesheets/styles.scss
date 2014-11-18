@@ -108,6 +108,11 @@ nav {
   height: 100vh;
   background-image: linear-gradient(160deg,#C23B22 10%,#FF6961 80%);
   position: relative;
+
+  a:hover {
+    color: #CCC;
+  }
+
 }
 
 .intro {

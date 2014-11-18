@@ -33,6 +33,40 @@ a {
     }
 }
 
+// Globals
+.down-arrow {
+  border-color: #FFF;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  font-size: 33px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bottom {
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  bottom:10%;
+}
+
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+
 nav {
 
   text-align: center;
@@ -69,7 +103,7 @@ nav {
 
 }
 
-
+// Sections
 #intro {
   height: 100vh;
   background-image: linear-gradient(160deg,#C23B22 10%,#FF6961 80%);
@@ -80,34 +114,9 @@ nav {
   margin-top: 20%;
 }
 
-.down-arrow {
-  border-color: #FFF;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 50%;
-	width: 50px;
-	height: 50px;
-  line-height: 45px;
-  font-size: 33px;
-  text-align: center;
-  margin: 0 auto;
+#myself {
+  color: black;
 }
-
-.bottom {
-  position: absolute;
-  left:0;
-  right:0;
-  margin-left:auto;
-  margin-right:auto;
-  bottom:10%;
-}
-
-
-.nopadding {
-   padding: 0 !important;
-   margin: 0;
-}
-
 
 #profile{
     margin-top: 30px;

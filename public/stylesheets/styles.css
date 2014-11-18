@@ -64,6 +64,8 @@ nav {
   height: 100vh;
   background-image: linear-gradient(160deg, #C23B22 10%, #FF6961 80%);
   position: relative; }
+  #intro a:hover {
+    color: #CCC; }
 
 .intro {
   margin-top: 20%; }
@@ -73,5 +75,3 @@ nav {
 
 #profile {
   margin-top: 30px; }
-
-/*# sourceMappingURL=styles.css.map */

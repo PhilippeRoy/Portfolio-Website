@@ -1,14 +1,16 @@
-$font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif; 
+$font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 
- 
+
 body {
   	font-family: $font-family;
   	text-align: center;
+    color: white;
+
   }
 h1 {
       font-size: 60px;
       font-weight: 100;
-      color: black;
+      color: white;
    }
 h2, h3 {
     font-weight: 100;
@@ -17,7 +19,7 @@ h2, h3 {
 
 a {
 
-    color: #333;
+    color: white;
 
     &:hover{
     	color: #EE0000;
@@ -33,7 +35,7 @@ a {
 
 nav {
 
-  text-align: center; 
+  text-align: center;
   font-weight: 200 ;
 
   nav a {
@@ -68,8 +70,36 @@ nav {
 }
 
 
+#intro {
+  height: 100vh;
+  background-image: linear-gradient(160deg,#C23B22 10%,#FF6961 80%);
+  position: relative;
+}
+
 .intro {
-  margin-top: 25%;
+  margin-top: 20%;
+}
+
+.down-arrow {
+  border-color: #FFF;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: 50%;
+	width: 50px;
+	height: 50px;
+  line-height: 45px;
+  font-size: 33px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.bottom {
+  position: absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  bottom:10%;
 }
 
 
@@ -83,5 +113,3 @@ nav {
     margin-top: 30px;
 
 }
-
-

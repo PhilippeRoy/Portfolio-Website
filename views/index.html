@@ -1,40 +1,46 @@
 {{> header}}
-	
+
 <div id="fullpage">
-	<section class="part" data-anchor="intro">
-	  	<div class="container">
-            <div class="row">
-				<div class="col-xs-1 col-sm-2 col-md-4"></div>
-				<div class="col-xs-10 col-sm-8 col-md-4">
-					<div class="intro">
-						<h1>{{name}}</h1>
-						<h2>{{title}}</h2>
+	<section id="intro">
+	  <div class="container">
+			<div class="intro">
+	      <div class="row">
+					<div class="col-xs-12">
+						<div class="">
+							<h1>{{name}}</h1>
+							<h2>{{title}}</h2>
+						</div>
+					</div>
+				</div>
+				<nav class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4" >
+						<div class="center-block" style="max-width:260px">
+						<!-- add loop for buttons -->
+						<div class="col-md-4 nopadding navitem">
+							<a href="#myself">myself</a>
+						</div>
+						<div class="col-md-4 nopadding navitem">
+							<a href="#things">a few things</a>
+						</div>
+						<div class="col-md-4 nopadding navitem">
+							<a href="#contact">contact</a>
+						</div>
+					</div>
+				</nav>
+				<div class="row bottom">
+					<div class="col-xs-12">
+				    <div class="down-arrow">&#8681;</div>
 					</div>
 				</div>
 			</div>
-			<nav class="row">
-				<div class="col-md-4"></div>
-				<div class="col-md-4" >
-					<div class="center-block" style="max-width:260px">
-					<!-- add loop for buttons -->
-					<div class="col-md-4 nopadding navitem">
-						<a href="#myself">myself</a>
-					</div>
-					<div class="col-md-4 nopadding navitem">
-						<a href="#things">a few things</a>
-					</div>
-					<div class="col-md-4 nopadding navitem">
-						<a href="#contact">contact</a>
-					</div>
-				</div>
-			</nav>
 		</div>
-    </section>
+  </section>
 	<section data-anchor="myself" class="part">
 		<div class="container">
 			<div class="row">
 				<h2>Hello</h2>
-				<hr>	
+				<hr>
 			</div>
 			<div class="row">
 				<div class="col-xs-1"></div>
@@ -54,7 +60,7 @@
 			</div>
 		</div>
 	</section >
-    <section data-anchor="things" class="part">  		
+    <section data-anchor="things" class="part">
 	    <div class="container ">
 			<div class="row">
 				<div class="col-md-4"></div>
@@ -62,8 +68,8 @@
 					<h2>A Few Things</h2>
 				</div>
 			</div>
-		</div>		 			
-    </section>   
+		</div>
+    </section>
     <section data-anchor="contact" class="part">
     	<div class="container">
 	       	<div class="row">

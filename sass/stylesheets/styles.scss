@@ -1,18 +1,35 @@
+@import "font-awesome/variables";
+@import "font-awesome/mixins";
+@import "font-awesome/path";
+@import "font-awesome/core";
+@import "font-awesome/larger";
+@import "font-awesome/fixed-width";
+@import "font-awesome/list";
+@import "font-awesome/bordered-pulled";
+@import "font-awesome/spinning";
+@import "font-awesome/rotated-flipped";
+@import "font-awesome/stacked";
+@import "font-awesome/icons";
+
 $font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+$dark-red-pastel : #C23B22;
+$light-red-pastel : #FF6961;
 
-
+/* ==========================================================================
+ * Globals Base
+   ========================================================================== */
 body {
   	font-family: $font-family;
   	text-align: center;
-    color: white;
+    color: black;
 
   }
+
 h1 {
       font-size: 60px;
       font-weight: 100;
-      color: white;
    }
-h2, h3 {
+h2, h3, h4 {
     font-weight: 100;
     margin-bottom: 20px;
 }
@@ -22,7 +39,7 @@ a {
     color: white;
 
     &:hover{
-    	color: #EE0000;
+    	color: $dark-red-pastel;
         text-decoration: none;
     }
     &:visited{
@@ -33,7 +50,17 @@ a {
     }
 }
 
-// Globals
+hr {
+  margin-bottom:40px;
+}
+
+.section {
+  padding-bottom: 40px;
+}
+
+/* ==========================================================================
+ * Globals Compents
+   ========================================================================== */
 .down-arrow {
   border-color: #FFF;
   border-width: 2px;
@@ -58,13 +85,26 @@ a {
 
 
 .nopadding {
-   padding: 0 !important;
-   margin: 0;
+  padding: 0 ;
+  margin: 0;
 }
 
 .title {
   text-align: center;
 }
+
+.circle {
+  position:relative;
+  width:160px;
+  height:160px;
+  top:0px;
+  margin:0 auto;
+  padding-top:22px;
+  border-radius:128px;
+  border:2px solid $light-red-pastel;
+  background-color:#FFF;
+  overflow-x:hidden;
+  }
 
 
 nav {
@@ -79,35 +119,31 @@ nav {
   a:hover{
       color: #000;
       font-weight: 400 ;
-      // display: inline-block;
-      //padding: 3px 6px;
-      // line-height: 1.42857143;
-      // text-align: center;
-      // white-space: nowrap;
-      // vertical-align: middle;
-      // cursor: pointer;
-      // -webkit-user-select: none;
-      // -moz-user-select: none;
-      // -ms-user-select: none;
-      // user-select: none;
-      // background-image: none;
-      //border-top: 1px solid #333;
-
-      //border-bottom: 1px solid #333;
-      //border-radius: 15px;
     }
 
     .navitem {
         margin-top: 30px;
+        padding: 12px 22px;
+
+        border: 1px solid #FFF;
     }
 
 }
 
-// Sections
+
+/* ==========================================================================
+ * Sections
+   ========================================================================== */
+
+// Intro
 #intro {
   height: 100vh;
-  background-image: linear-gradient(160deg,#C23B22 10%,#FF6961 80%);
+  background-image: linear-gradient(160deg,$dark-red-pastel 10%,$light-red-pastel 80%);
   position: relative;
+
+  h1, h2 {
+    color: white;
+  }
 
   a:hover {
     color: #CCC;
@@ -118,12 +154,100 @@ nav {
 .intro {
   margin-top: 20%;
 }
-
+// Myself
 #myself {
   color: black;
+  margin-bottom: 0px;
+
+  .profile-box {
+    text-align: left;
+
+    h2 {
+      text-align: center;
+    }
+
+    .summary {
+      margin-bottom: 40px;
+    }
+  }
 }
 
-#profile{
+.bio {
     margin-top: 30px;
+    text-align: justify;
 
+}
+// A Few Things
+#things {
+  background-image: linear-gradient(160deg,#FAF7F5 30%,rgba(251,248,245,0) 82%);
+  border-bottom: 1px solid #DBD9D5;
+  border-top: 1px solid #DBD9D5;
+}
+
+// Contact
+#contact {
+  background-image: linear-gradient(160deg,$dark-red-pastel 10%,$light-red-pastel 80%);
+  color: white;
+
+}
+
+// Site Map
+#siteMap {
+  text-align: left;
+
+  ul {
+    list-style-type: none;
+    margin-top: 20px;
+
+    li {
+      height: 25px;
+    }
+  }
+
+}
+
+/* ==========================================================================
+ * Carousel
+   ========================================================================== */
+
+#carousel-portfolio {
+
+  min-height: 520px;
+  margin-bottom: 40px;
+
+  .carousel-inner {
+    min-height: 520px;
+  }
+
+  .carousel-control {
+    background-image: none;
+  }
+
+  .item {
+  }
+
+  .carousel-indicators li {
+    border: 1px solid $light-red-pastel;
+  }
+
+  .carousel-indicators .active{
+    background-color: $light-red-pastel;
+  }
+
+  .carousel-indicators {
+    bottom: -60px;
+  }
+
+}
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  #carousel-portfolio {
+    height: 50vh;
+
+    .carousel-inner {
+      height: 50vh;
+    }
+  }
 }

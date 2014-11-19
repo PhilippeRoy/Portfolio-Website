@@ -1712,7 +1712,7 @@ hr {
   bottom: 10%; }
 
 .nopadding {
-  padding: 0 !important;
+  padding: 0;
   margin: 0; }
 
 .title {
@@ -1739,7 +1739,9 @@ nav {
     color: #000;
     font-weight: 400; }
   nav .navitem {
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding: 12px 22px;
+    border: 1px solid #FFF; }
 
 /* ==========================================================================
  * Sections
@@ -1781,6 +1783,11 @@ nav {
 
 #siteMap {
   text-align: left; }
+  #siteMap ul {
+    list-style-type: none;
+    margin-top: 20px; }
+    #siteMap ul li {
+      height: 25px; }
 
 /* ==========================================================================
  * Carousel

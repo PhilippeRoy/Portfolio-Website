@@ -1668,7 +1668,7 @@ h1 {
   font-size: 60px;
   font-weight: 100; }
 
-h2, h3, h4 {
+h2, h3, h4, .h4 {
   font-weight: 100;
   margin-bottom: 20px; }
 
@@ -1730,18 +1730,23 @@ hr {
   background-color: #FFF;
   overflow-x: hidden; }
 
-nav {
+/* ==========================================================================
+ * Navigation
+   ========================================================================== */
+.secondary-nav {
   text-align: center;
-  font-weight: 200; }
-  nav nav a {
+  font-weight: 200;
+  margin-top: 20px; }
+  .secondary-nav a {
     margin-top: 12px; }
-  nav a:hover {
-    color: #000;
-    font-weight: 400; }
-  nav .navitem {
-    margin-top: 30px;
+  .secondary-nav a:hover {
+    color: #FFF; }
+  .secondary-nav .navbutton {
     padding: 12px 22px;
-    border: 1px solid #FFF; }
+    border: 1px solid #FFF;
+    border-radius: 2px; }
+    .secondary-nav .navbutton:hover {
+      background-color: rgba(255, 255, 255, 0.25); }
 
 /* ==========================================================================
  * Sections
@@ -1752,8 +1757,6 @@ nav {
   position: relative; }
   #intro h1, #intro h2 {
     color: white; }
-  #intro a:hover {
-    color: #CCC; }
 
 .intro {
   margin-top: 20%; }
@@ -1780,6 +1783,14 @@ nav {
 #contact {
   background-image: linear-gradient(160deg, #C23B22 10%, #FF6961 80%);
   color: white; }
+  #contact a {
+    color: white; }
+    #contact a:hover {
+      text-decoration: underline; }
+    #contact a:visited {
+      text-decoration: none; }
+    #contact a:focus {
+      text-decoration: none; }
 
 #siteMap {
   text-align: left; }
@@ -1787,7 +1798,16 @@ nav {
     list-style-type: none;
     margin-top: 20px; }
     #siteMap ul li {
-      height: 25px; }
+      height: 25px;
+      font-weight: 200; }
+  #siteMap a {
+    color: black; }
+    #siteMap a:hover {
+      color: #FF6961; }
+    #siteMap a:visited {
+      text-decoration: none; }
+    #siteMap a:focus {
+      text-decoration: none; }
 
 /* ==========================================================================
  * Carousel

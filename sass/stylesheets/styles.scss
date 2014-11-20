@@ -29,7 +29,7 @@ h1 {
       font-size: 60px;
       font-weight: 100;
    }
-h2, h3, h4 {
+h2, h3, h4, .h4 {
     font-weight: 100;
     margin-bottom: 20px;
 }
@@ -40,7 +40,7 @@ a {
 
     &:hover{
     	color: $dark-red-pastel;
-        text-decoration: none;
+      text-decoration: none;
     }
     &:visited{
         text-decoration: none;
@@ -106,26 +106,32 @@ hr {
   overflow-x:hidden;
   }
 
+/* ==========================================================================
+ * Navigation
+   ========================================================================== */
 
-nav {
+.secondary-nav {
 
   text-align: center;
   font-weight: 200 ;
+  margin-top: 20px;
 
-  nav a {
+  a {
     margin-top:12px;
   }
 
   a:hover{
-      color: #000;
-      font-weight: 400 ;
+      color: #FFF;
     }
 
-    .navitem {
-        margin-top: 30px;
+  .navbutton {
         padding: 12px 22px;
-
         border: 1px solid #FFF;
+        border-radius: 2px;
+
+        &:hover {
+          background-color:rgba(255, 255, 255, 0.25)
+        }
     }
 
 }
@@ -143,10 +149,6 @@ nav {
 
   h1, h2 {
     color: white;
-  }
-
-  a:hover {
-    color: #CCC;
   }
 
 }
@@ -189,6 +191,22 @@ nav {
   background-image: linear-gradient(160deg,$dark-red-pastel 10%,$light-red-pastel 80%);
   color: white;
 
+  a {
+
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:visited{
+        text-decoration: none;
+    }
+    &:focus{
+        text-decoration: none;
+    }
+  }
+
 }
 
 // Site Map
@@ -201,6 +219,22 @@ nav {
 
     li {
       height: 25px;
+      font-weight: 200;
+    }
+  }
+
+  a {
+    color: black;
+
+    &:hover {
+      color: $light-red-pastel;
+    }
+
+    &:visited{
+        text-decoration: none;
+    }
+    &:focus{
+        text-decoration: none;
     }
   }
 

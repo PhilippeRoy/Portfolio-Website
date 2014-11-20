@@ -1741,6 +1741,12 @@ hr {
     margin-top: 12px; }
   .secondary-nav a:hover {
     color: #FFF; }
+  .secondary-nav .nav-list {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none; }
+    .secondary-nav .nav-list > li {
+      margin-bottom: 40px; }
   .secondary-nav .navbutton {
     padding: 12px 22px;
     border: 1px solid #FFF;
@@ -1831,6 +1837,11 @@ hr {
   #carousel-portfolio {
     height: 50vh; }
     #carousel-portfolio .carousel-inner {
-      height: 50vh; } }
+      height: 50vh; }
+
+  .nav-list > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px; } }
 
 /*# sourceMappingURL=styles.css.map */

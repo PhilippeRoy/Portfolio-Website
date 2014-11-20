@@ -124,6 +124,16 @@ hr {
       color: #FFF;
     }
 
+  .nav-list {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+
+    &>li {
+      margin-bottom: 40px;
+    }
+  }
+
   .navbutton {
         padding: 12px 22px;
         border: 1px solid #FFF;
@@ -282,6 +292,14 @@ hr {
 
     .carousel-inner {
       height: 50vh;
+    }
+  }
+
+  .nav-list {
+    &>li {
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px;
     }
   }
 }

@@ -222,11 +222,19 @@ hr {
     }
   }
 
+  .copywrite {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 200;
+  }
+
 }
 
 // Site Map
 #siteMap {
   text-align: left;
+  padding-bottom: 20px;
 
   ul {
     list-style-type: none;
@@ -251,6 +259,12 @@ hr {
     &:focus{
         text-decoration: none;
     }
+  }
+
+  .copywrite {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 200;
   }
 
 }

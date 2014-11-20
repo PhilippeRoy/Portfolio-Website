@@ -1800,9 +1800,15 @@ hr {
       text-decoration: none; }
     #contact a:focus {
       text-decoration: none; }
+  #contact .copywrite {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 200; }
 
 #siteMap {
-  text-align: left; }
+  text-align: left;
+  padding-bottom: 20px; }
   #siteMap ul {
     list-style-type: none;
     margin-top: 20px; }
@@ -1817,6 +1823,10 @@ hr {
       text-decoration: none; }
     #siteMap a:focus {
       text-decoration: none; }
+  #siteMap .copywrite {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 200; }
 
 /* ==========================================================================
  * Carousel

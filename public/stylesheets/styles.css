@@ -1775,7 +1775,10 @@ hr {
     #myself .profile-box h2 {
       text-align: center; }
     #myself .profile-box .summary {
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      color: red; }
+      #myself .profile-box .summary span.black {
+        color: black; }
 
 .bio {
   margin-top: 30px;

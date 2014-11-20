@@ -180,6 +180,11 @@ hr {
 
     .summary {
       margin-bottom: 40px;
+      color: red;
+
+      span.black {
+        color: black;
+      }
     }
   }
 }

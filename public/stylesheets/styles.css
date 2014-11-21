@@ -1660,6 +1660,7 @@
  * Globals Base
    ========================================================================== */
 body {
+  position: relative;
   font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center;
   color: black; }
@@ -1733,6 +1734,21 @@ hr {
 /* ==========================================================================
  * Navigation
    ========================================================================== */
+nav {
+  z-index: 1;
+  width: 100%; }
+  nav .navbar-default {
+    position: fixed !important; }
+
+.affix-top {
+  top: -50px; }
+
+.navbar {
+  position: fixed;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  border: 0px solid transparent; }
+
 .secondary-nav {
   text-align: center;
   font-weight: 200;
@@ -1855,6 +1871,9 @@ hr {
   .nav-list > li {
     display: inline-block;
     padding-right: 5px;
-    padding-left: 5px; } }
+    padding-left: 5px; }
+
+  .dropdown:hover .dropdown-menu {
+    display: block; } }
 
 /*# sourceMappingURL=styles.css.map */

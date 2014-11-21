@@ -19,9 +19,10 @@ $light-red-pastel : #FF6961;
  * Globals Base
    ========================================================================== */
 body {
-  	font-family: $font-family;
-  	text-align: center;
-    color: black;
+  position: relative;
+  font-family: $font-family;
+  text-align: center;
+  color: black;
 
   }
 
@@ -110,6 +111,30 @@ hr {
  * Navigation
    ========================================================================== */
 
+nav {
+  z-index: 1;
+  width: 100%;
+
+  .navbar-default {
+    position: fixed !important;
+  }
+}
+
+.affix {
+//  top: 0px;
+}
+
+.affix-top {
+  top: -50px;
+}
+
+.navbar {
+  position: fixed;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  border: 0px solid transparent;
+}
+
 .secondary-nav {
 
   text-align: center;
@@ -153,6 +178,7 @@ hr {
 
 // Intro
 #intro {
+
   height: 100vh;
   background-image: linear-gradient(160deg,$dark-red-pastel 10%,$light-red-pastel 80%);
   position: relative;
@@ -321,4 +347,10 @@ hr {
       padding-left: 5px;
     }
   }
+
+  .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+
+
 }

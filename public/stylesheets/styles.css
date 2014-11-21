@@ -1779,7 +1779,8 @@ nav {
   border-radius: 0px;
   margin-bottom: 0px;
   border: 0px solid transparent;
-  opacity: 0; }
+  opacity: 0;
+  z-index: 2; }
   .navbar .navbar-brand {
     color: black;
     font-weight: 100;
@@ -1819,11 +1820,13 @@ nav {
     margin-left: -5px;
     list-style: none; }
     .secondary-nav .nav-list > li {
-      margin-bottom: 40px; }
+      margin-bottom: 20px; }
   .secondary-nav .navbutton {
     padding: 12px 22px;
     border: 1px solid #FFF;
-    border-radius: 2px; }
+    border-radius: 2px;
+    margin-right: 50px;
+    margin-left: 50px; }
     .secondary-nav .navbutton:hover {
       background-color: rgba(255, 255, 255, 0.25); }
 
@@ -1922,14 +1925,21 @@ nav {
   #carousel-portfolio .carousel-indicators {
     bottom: -60px; }
 
+/* ==========================================================================
+ * Media Queries
+   ========================================================================== */
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
-  #carousel-portfolio {
-    height: 50vh; }
-    #carousel-portfolio .carousel-inner {
-      height: 50vh; }
+  .owl-stage-outer {
+    height: 450px; }
 
-  .nav-list > li {
+  .secondary-nav .navbutton {
+    padding: 12px 22px;
+    border: 1px solid #FFF;
+    border-radius: 2px;
+    margin-right: 0px;
+    margin-left: 0px; }
+  .secondary-nav .nav-list > li {
     display: inline-block;
     padding-right: 5px;
     padding-left: 5px; }

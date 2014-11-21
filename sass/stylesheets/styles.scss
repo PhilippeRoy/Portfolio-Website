@@ -173,6 +173,7 @@ nav {
   margin-bottom: 0px;
   border: 0px solid transparent;
   opacity: 0;
+  z-index: 2;
 
   .navbar-brand {
     color: black;
@@ -240,7 +241,7 @@ nav {
     list-style: none;
 
     &>li {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
   }
 
@@ -248,6 +249,9 @@ nav {
         padding: 12px 22px;
         border: 1px solid #FFF;
         border-radius: 2px;
+        margin-right: 50px;
+        margin-left: 50px;
+
 
         &:hover {
           background-color:rgba(255, 255, 255, 0.25)
@@ -421,15 +425,24 @@ nav {
 
 }
 
+/* ==========================================================================
+ * Media Queries
+   ========================================================================== */
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-  #carousel-portfolio {
-    height: 50vh;
+  .owl-stage-outer {
+    height: 450px;
+  }
 
-    .carousel-inner {
-      height: 50vh;
-    }
+
+.secondary-nav {
+  .navbutton {
+      padding: 12px 22px;
+      border: 1px solid #FFF;
+      border-radius: 2px;
+      margin-right: 0px;
+      margin-left: 0px;
   }
 
   .nav-list {
@@ -439,10 +452,13 @@ nav {
       padding-left: 5px;
     }
   }
-
+}
   .dropdown:hover .dropdown-menu {
         display: block;
     }
+
+
+
 
 
 }

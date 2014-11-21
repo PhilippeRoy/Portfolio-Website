@@ -1778,8 +1778,10 @@ nav {
   position: fixed;
   border-radius: 0px;
   margin-bottom: 0px;
-  border: 0px solid transparent; }
+  border: 0px solid transparent;
+  opacity: 0; }
   .navbar .navbar-brand {
+    color: black;
     font-weight: 100;
     font-size: 25px; }
   .navbar .nav li.active {
@@ -1876,6 +1878,10 @@ nav {
     text-align: center;
     margin-top: 20px;
     font-weight: 200; }
+
+#toolbelt .toolbelt-img {
+  max-width: 140px;
+  max-height: 140px; }
 
 #siteMap {
   text-align: left;

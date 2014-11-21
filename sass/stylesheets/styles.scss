@@ -170,8 +170,10 @@ nav {
   border-radius: 0px;
   margin-bottom: 0px;
   border: 0px solid transparent;
+  opacity: 0;
 
   .navbar-brand {
+    color: black;
     font-weight: 100;
     font-size: 25px;
   }
@@ -184,7 +186,7 @@ nav {
 
       color: black;
 
-      &:hover{
+      &:hover {
         color: $light-red-pastel;
         text-decoration: none;
       }
@@ -338,6 +340,13 @@ nav {
 
 }
 
+// Toolbelt
+#toolbelt {
+  .toolbelt-img {
+    max-width: 140px;
+    max-height: 140px;
+  }
+}
 // Site Map
 #siteMap {
   text-align: left;

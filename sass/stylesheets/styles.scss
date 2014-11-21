@@ -11,6 +11,9 @@
 @import "font-awesome/stacked";
 @import "font-awesome/icons";
 
+// iOS 7 fix for vh
+@import"ios/_iosMediaQueries";
+
 $font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 $dark-red-pastel : #C23B22;
 $light-red-pastel : #FF6961;

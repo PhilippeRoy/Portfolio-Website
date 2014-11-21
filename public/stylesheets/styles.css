@@ -1676,7 +1676,7 @@ h2, h3, h4, .h4 {
 a {
   color: white; }
   a:hover {
-    color: #C23B22;
+    color: #FF6961;
     text-decoration: none; }
   a:visited {
     text-decoration: none; }
@@ -1703,6 +1703,8 @@ hr {
   font-size: 33px;
   text-align: center;
   margin: 0 auto; }
+  .down-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.25); }
 
 .bottom {
   position: absolute;
@@ -1731,6 +1733,37 @@ hr {
   background-color: #FFF;
   overflow-x: hidden; }
 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 0px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: left;
+  list-style: none;
+  background-color: #FAF7F5;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 0px;
+  border-radius: 0px;
+  box-shadow: none; }
+  .dropdown-menu li a {
+    font-weight: 200; }
+    .dropdown-menu li a:hover, .dropdown-menu li a:focus {
+      background-color: #e7e7e7; }
+
+.icon {
+  display: block;
+  width: 94px;
+  height: 94px;
+  margin: 0 auto; }
+
 /* ==========================================================================
  * Navigation
    ========================================================================== */
@@ -1740,14 +1773,36 @@ nav {
   nav .navbar-default {
     position: fixed !important; }
 
-.affix-top {
-  top: -50px; }
-
 .navbar {
+  background: #FAF7F5;
   position: fixed;
   border-radius: 0px;
   margin-bottom: 0px;
   border: 0px solid transparent; }
+  .navbar .navbar-brand {
+    font-weight: 100;
+    font-size: 25px; }
+  .navbar .nav li.active {
+    background: #e7e7e7; }
+  .navbar a {
+    color: black; }
+    .navbar a:hover {
+      color: #FF6961;
+      text-decoration: none; }
+    .navbar a:visited {
+      text-decoration: none; }
+    .navbar a:focus {
+      text-decoration: none; }
+
+.navbar-default .navbar-nav > li > a {
+  font-weight: 200;
+  color: black; }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #777;
+  background-color: transparent; }
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #777;
+  background-color: #e7e7e7; }
 
 .secondary-nav {
   text-align: center;

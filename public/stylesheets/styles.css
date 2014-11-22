@@ -1891,8 +1891,8 @@ nav {
     font-weight: 200; }
 
 #toolbelt .toolbelt-img {
-  max-width: 140px;
-  max-height: 140px; }
+  max-height: 140px;
+  border: 0px; }
 
 #siteMap {
   text-align: left;
@@ -1939,19 +1939,8 @@ nav {
   -moz-border-radius: 30px;
   border-radius: 30px; }
 
-#carousel-portfolio {
-  min-height: 520px;
-  margin-bottom: 40px; }
-  #carousel-portfolio .carousel-inner {
-    min-height: 520px; }
-  #carousel-portfolio .carousel-control {
-    background-image: none; }
-  #carousel-portfolio .carousel-indicators li {
-    border: 1px solid #FF6961; }
-  #carousel-portfolio .carousel-indicators .active {
-    background-color: #FF6961; }
-  #carousel-portfolio .carousel-indicators {
-    bottom: -60px; }
+div.owl-dot {
+  display: inline-block; }
 
 /* ==========================================================================
  * Media Queries
@@ -2013,6 +2002,6 @@ nav {
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   /* STYLES GO HERE */
   #intro {
-    height: 525px; } }
+    height: 500px; } }
 
 /*# sourceMappingURL=styles.css.map */

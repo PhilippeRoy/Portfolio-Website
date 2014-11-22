@@ -370,8 +370,8 @@ nav {
 // Toolbelt
 #toolbelt {
   .toolbelt-img {
-    max-width: 140px;
     max-height: 140px;
+    border: 0px;
   }
 }
 // Site Map
@@ -439,35 +439,10 @@ nav {
   border-radius: 30px;
 }
 
-#carousel-portfolio {
-
-  min-height: 520px;
-  margin-bottom: 40px;
-
-  .carousel-inner {
-    min-height: 520px;
-  }
-
-  .carousel-control {
-    background-image: none;
-  }
-
-  .item {
-  }
-
-  .carousel-indicators li {
-    border: 1px solid $light-red-pastel;
-  }
-
-  .carousel-indicators .active{
-    background-color: $light-red-pastel;
-  }
-
-  .carousel-indicators {
-    bottom: -60px;
-  }
-
+div.owl-dot {
+  display: inline-block;
 }
+
 
 /* ==========================================================================
  * Media Queries

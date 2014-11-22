@@ -373,6 +373,16 @@ nav {
     max-height: 140px;
     border: 0px;
   }
+
+  .tool {
+    min-height: 140px;
+  }
+
+  .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
 }
 // Site Map
 #siteMap {

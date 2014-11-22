@@ -1893,6 +1893,12 @@ nav {
 #toolbelt .toolbelt-img {
   max-height: 140px;
   border: 0px; }
+#toolbelt .tool {
+  min-height: 140px; }
+#toolbelt .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
 
 #siteMap {
   text-align: left;

@@ -174,6 +174,7 @@ nav {
   border: 0px solid transparent;
   opacity: 0;
   z-index: 2;
+  display: none;
 
   .navbar-brand {
     color: black;
@@ -337,6 +338,24 @@ nav {
   }
 }
 
+// Toolbelt
+#toolbelt {
+  .toolbelt-img {
+    max-height: 140px;
+    border: 0px;
+  }
+
+  .tool {
+    min-height: 140px;
+  }
+
+  .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+ }
+}
+
 // Contact
 #contact {
   background-image: linear-gradient(160deg,$dark-red-pastel 10%,$light-red-pastel 80%);
@@ -365,25 +384,13 @@ nav {
     font-weight: 200;
   }
 
-}
-
-// Toolbelt
-#toolbelt {
-  .toolbelt-img {
-    max-height: 140px;
-    border: 0px;
+  .fa {
+    display: block;
   }
 
-  .tool {
-    min-height: 140px;
-  }
+}
 
-  .helper {
-    display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-}
-}
+
 // Site Map
 #siteMap {
   text-align: left;
@@ -456,7 +463,7 @@ div.owl-dot {
 
 /* ==========================================================================
  * Media Queries
-   ========================================================================== */
+   ==========================================================================*/
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
@@ -486,7 +493,11 @@ div.owl-dot {
         display: block;
     }
 
-
+#contact {
+  .fa {
+    display: inline-block;
+  }
+}
 
 
 

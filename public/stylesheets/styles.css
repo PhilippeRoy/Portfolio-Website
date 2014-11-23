@@ -1780,7 +1780,8 @@ nav {
   margin-bottom: 0px;
   border: 0px solid transparent;
   opacity: 0;
-  z-index: 2; }
+  z-index: 2;
+  display: none; }
   .navbar .navbar-brand {
     color: black;
     font-weight: 100;
@@ -1873,6 +1874,16 @@ nav {
     #things .moreThings a:focus {
       text-decoration: none; }
 
+#toolbelt .toolbelt-img {
+  max-height: 140px;
+  border: 0px; }
+#toolbelt .tool {
+  min-height: 140px; }
+#toolbelt .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
 #contact {
   background-image: linear-gradient(160deg, #C23B22 10%, #FF6961 80%);
   color: white; }
@@ -1889,16 +1900,8 @@ nav {
     text-align: center;
     margin-top: 20px;
     font-weight: 200; }
-
-#toolbelt .toolbelt-img {
-  max-height: 140px;
-  border: 0px; }
-#toolbelt .tool {
-  min-height: 140px; }
-#toolbelt .helper {
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle; }
+  #contact .fa {
+    display: block; }
 
 #siteMap {
   text-align: left;
@@ -1950,7 +1953,7 @@ div.owl-dot {
 
 /* ==========================================================================
  * Media Queries
-   ========================================================================== */
+   ==========================================================================*/
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .owl-stage-outer {
@@ -1968,7 +1971,10 @@ div.owl-dot {
     padding-left: 5px; }
 
   .dropdown:hover .dropdown-menu {
-    display: block; } }
+    display: block; }
+
+  #contact .fa {
+    display: inline-block; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
   /* STYLES GO HERE */
   #intro {

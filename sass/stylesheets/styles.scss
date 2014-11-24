@@ -286,7 +286,7 @@ nav {
 }
 
 .intro {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 // Myself
 #myself {
@@ -579,41 +579,51 @@ div.owl-dot {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
   .owl-stage-outer {
     height: 450px;
   }
 
 
-.secondary-nav {
-  .navbutton {
-      padding: 12px 22px;
-      border: 1px solid #FFF;
-      border-radius: 2px;
-      margin-right: 0px;
-      margin-left: 0px;
-  }
+  .secondary-nav {
+    .navbutton {
+        padding: 12px 22px;
+        border: 1px solid #FFF;
+        border-radius: 2px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
 
-  .nav-list {
-    &>li {
-      display: inline-block;
-      padding-right: 5px;
-      padding-left: 5px;
+    .nav-list {
+      &>li {
+        display: inline-block;
+        padding-right: 5px;
+        padding-left: 5px;
+      }
     }
   }
-}
+
   .dropdown:hover .dropdown-menu {
         display: block;
     }
 
-#contact {
-  .fa {
-    display: inline-block;
+  #contact {
+    .fa {
+      display: inline-block;
+    }
   }
-}
-
-
 
 }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1400px) {
+
+  .intro {
+    margin-top: 20%;
+  }
+
+}
+
 
 // iOS 7 fix for vh
 @import"ios/_iosMediaQueries";

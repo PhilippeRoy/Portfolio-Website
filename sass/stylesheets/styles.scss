@@ -76,6 +76,7 @@ hr {
   text-align: center;
   margin: 0 auto;
 
+
   &:hover {
     background-color:rgba(255, 255, 255, 0.25)
   }
@@ -174,7 +175,7 @@ nav {
   border: 0px solid transparent;
   opacity: 0;
   z-index: 2;
-  display: none;
+  display: block;
 
   .navbar-brand {
     color: black;
@@ -243,6 +244,8 @@ nav {
 
     &>li {
       margin-bottom: 20px;
+      opacity: 0;
+
     }
   }
 
@@ -277,6 +280,9 @@ nav {
     color: white;
   }
 
+
+
+
 }
 
 .intro {
@@ -290,11 +296,18 @@ nav {
   .profile-box {
     text-align: left;
 
+
     h2 {
       text-align: center;
+      color: black;
     }
 
+    .circle {
+      top: 180px;
+      opacity: 0;
+    }
     .summary {
+      background: white;
       margin-bottom: 40px;
       color: red;
 
@@ -460,6 +473,105 @@ div.owl-dot {
   display: inline-block;
 }
 
+/* ==========================================================================
+ * Animations
+   ========================================================================== */
+
+// Slide Down
+.slideDown{
+   -webkit-animation: slideDown 1s; /* Chrome, Safari, Opera */
+   animation: slideDown 1s;
+
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform:translateY(-40px);
+    transform:translateY(-40px);
+    opacity: 0;
+    }
+  100% {
+    -webkit-transform:translateY(0px);
+    transform:translateY(0px);
+    opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes slideDown {
+  0% {
+    -webkit-transform:translateY(-40px);
+    transform:translateY(-40px);
+    opacity: 0;
+    }
+  100% {
+    -webkit-transform:translateY(0px);
+    transform:translateY(0px);
+    opacity: 1;
+    }
+}
+
+// Pop Up
+
+.popUp{
+   -webkit-animation: popUp 1s; /* Chrome, Safari, Opera */
+   animation: popUp 1s;
+   z-index: -1;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes popUp {
+  0% {
+    top:180px;
+    opacity: 0;
+    }
+  100% {
+    top:0px;
+    opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes popUp {
+  0% {
+    top:180px;
+    opacity: 0;
+    }
+  100% {
+    top:0px;
+    opacity: 1;
+    }
+}
+
+
+// Fade In
+
+.fadeIn{
+   -webkit-animation: fadeIn 1s; /* Chrome, Safari, Opera */
+   animation: fadeIn 1s;
+   opacity: 1 !important;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    }
+  100% {
+    opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    }
+  100% {
+    opacity: 1;
+    }
+}
 
 /* ==========================================================================
  * Media Queries

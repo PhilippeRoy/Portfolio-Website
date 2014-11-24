@@ -1781,7 +1781,7 @@ nav {
   border: 0px solid transparent;
   opacity: 0;
   z-index: 2;
-  display: none; }
+  display: block; }
   .navbar .navbar-brand {
     color: black;
     font-weight: 100;
@@ -1821,7 +1821,8 @@ nav {
     margin-left: -5px;
     list-style: none; }
     .secondary-nav .nav-list > li {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      opacity: 0; }
   .secondary-nav .navbutton {
     padding: 12px 22px;
     border: 1px solid #FFF;
@@ -1850,8 +1851,13 @@ nav {
   #myself .profile-box {
     text-align: left; }
     #myself .profile-box h2 {
-      text-align: center; }
+      text-align: center;
+      color: black; }
+    #myself .profile-box .circle {
+      top: 180px;
+      opacity: 0; }
     #myself .profile-box .summary {
+      background: white;
       margin-bottom: 40px;
       color: red; }
       #myself .profile-box .summary span.black {
@@ -1951,6 +1957,74 @@ nav {
 div.owl-dot {
   display: inline-block; }
 
+/* ==========================================================================
+ * Animations
+   ========================================================================== */
+.slideDown {
+  -webkit-animation: slideDown 1s;
+  /* Chrome, Safari, Opera */
+  animation: slideDown 1s; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1; } }
+/* Standard syntax */
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-40px);
+    transform: translateY(-40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1; } }
+.popUp {
+  -webkit-animation: popUp 1s;
+  /* Chrome, Safari, Opera */
+  animation: popUp 1s;
+  z-index: -1; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes popUp {
+  0% {
+    top: 180px;
+    opacity: 0; }
+  100% {
+    top: 0px;
+    opacity: 1; } }
+/* Standard syntax */
+@keyframes popUp {
+  0% {
+    top: 180px;
+    opacity: 0; }
+  100% {
+    top: 0px;
+    opacity: 1; } }
+.fadeIn {
+  -webkit-animation: fadeIn 1s;
+  /* Chrome, Safari, Opera */
+  animation: fadeIn 1s;
+  opacity: 1 !important; }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+/* Standard syntax */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 /* ==========================================================================
  * Media Queries
    ==========================================================================*/

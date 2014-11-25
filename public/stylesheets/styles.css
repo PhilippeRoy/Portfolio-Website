@@ -1662,7 +1662,7 @@
    ========================================================================== */
 body {
   position: relative;
-  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", "Lato", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center;
   color: black; }
 
@@ -2095,5 +2095,17 @@ div.owl-dot {
   /* STYLES GO HERE */
   #intro {
     height: 500px; } }
+/* ==========================================================================
+ * No Js
+   ==========================================================================*/
+noscript .nav-list {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none; }
+  noscript .nav-list > li {
+    margin-bottom: 20px;
+    opacity: 1; }
+noscript .down-arrow {
+  opacity: 1; }
 
 /*# sourceMappingURL=styles.css.map */

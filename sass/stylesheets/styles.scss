@@ -14,7 +14,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300);
 
 
-$font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", "Lato", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
 $dark-red-pastel : #C23B22;
 $light-red-pastel : #FF6961;
 
@@ -26,6 +26,8 @@ body {
   font-family: $font-family;
   text-align: center;
   color: black;
+
+
 
   }
 
@@ -283,9 +285,6 @@ nav {
   h1, h2 {
     color: white;
   }
-
-
-
 
 }
 
@@ -635,3 +634,27 @@ div.owl-dot {
 
 // iOS 7 fix for vh
 @import"ios/_iosMediaQueries";
+
+
+/* ==========================================================================
+ * No Js
+   ==========================================================================*/
+
+noscript {
+
+  .nav-list {
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+
+    &>li {
+      margin-bottom: 20px;
+      opacity: 1;
+
+    }
+  }
+
+  .down-arrow{
+    opacity: 1;
+  }
+}

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* FONT PATH
  * -------------------------- */
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:400);
 @font-face {
   font-family: 'FontAwesome';
   src: url("/fonts/font-awesome/fontawesome-webfont.eot");

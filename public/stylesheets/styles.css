@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* FONT PATH
  * -------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300);
 @font-face {
   font-family: 'FontAwesome';
   src: url("/fonts/font-awesome/fontawesome-webfont.eot");
@@ -1661,7 +1662,7 @@
    ========================================================================== */
 body {
   position: relative;
-  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-family: "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", "Lato", Helvetica, Arial, "Lucida Grande", sans-serif;
   text-align: center;
   color: black; }
 
@@ -2094,5 +2095,65 @@ div.owl-dot {
   /* STYLES GO HERE */
   #intro {
     height: 500px; } }
+.icon {
+  font-size: 10px;
+  width: 140px;
+  height: 140px; }
+
+.icon:before {
+  content: ' ';
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url("/images/sprite.svg");
+  background-repeat: no-repeat;
+  background-size: 14em 126em; }
+
+.no-svg .icon:before {
+  background-image: url("/images/sprite.svg"); }
+
+.icon.bootstrap:before {
+  background-position: 0em 0em;
+  width: 100%;
+  height: 100%; }
+
+.icon.css3:before {
+  background-position: 0em -14em;
+  width: 14em;
+  height: 14em; }
+
+.icon.git:before {
+  background-position: 0em -28em;
+  width: 14em;
+  height: 14em; }
+
+.icon.html5:before {
+  background-position: 0em -42em;
+  width: 14em;
+  height: 14em; }
+
+.icon.javascript:before {
+  background-position: 0em -56em;
+  width: 14em;
+  height: 14em; }
+
+.icon.mongoDB:before {
+  background-position: 0em -70em;
+  width: 14em;
+  height: 14em; }
+
+.icon.node.js:before {
+  background-position: 0em -84em;
+  width: 14em;
+  height: 14em; }
+
+.icon.php:before {
+  background-position: 0em -98em;
+  width: 14em;
+  height: 14em; }
+
+.icon.wordpress:before {
+  background-position: 0em -112em;
+  width: 14em;
+  height: 14em; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -308,6 +308,7 @@ nav {
     .circle {
       top: 180px;
       opacity: 0;
+      display: none;
     }
     .summary {
       background: white;
@@ -642,19 +643,27 @@ div.owl-dot {
 
 noscript {
 
-  .nav-list {
-    padding-left: 0;
-    margin-left: -5px;
-    list-style: none;
 
-    &>li {
-      margin-bottom: 20px;
-      opacity: 1;
+    .nav-list {
+      padding-left: 0 !important;
+      margin-left: -5px !important;
+      list-style: none !important;
 
+      &>li {
+        margin-bottom: 20px !important;
+        opacity: 1 !important;
+
+      }
     }
-  }
 
   .down-arrow{
-    opacity: 1;
+    opacity: 1 !important;
+  }
+
+
+  .circle {
+    top: 0px !important;
+    opacity: 1 !important;
+    display: block !important;
   }
 }

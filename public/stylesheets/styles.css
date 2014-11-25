@@ -1857,7 +1857,8 @@ nav {
       color: black; }
     #myself .profile-box .circle {
       top: 180px;
-      opacity: 0; }
+      opacity: 0;
+      display: none; }
     #myself .profile-box .summary {
       background: white;
       margin-bottom: 40px;
@@ -2099,13 +2100,17 @@ div.owl-dot {
  * No Js
    ==========================================================================*/
 noscript .nav-list {
-  padding-left: 0;
-  margin-left: -5px;
-  list-style: none; }
+  padding-left: 0 !important;
+  margin-left: -5px !important;
+  list-style: none !important; }
   noscript .nav-list > li {
-    margin-bottom: 20px;
-    opacity: 1; }
+    margin-bottom: 20px !important;
+    opacity: 1 !important; }
 noscript .down-arrow {
-  opacity: 1; }
+  opacity: 1 !important; }
+noscript .circle {
+  top: 0px !important;
+  opacity: 1 !important;
+  display: block !important; }
 
 /*# sourceMappingURL=styles.css.map */

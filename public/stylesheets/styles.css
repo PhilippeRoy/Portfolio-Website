@@ -1829,8 +1829,7 @@ nav {
     padding: 12px 22px;
     border: 1px solid #FFF;
     border-radius: 2px;
-    margin-right: 50px;
-    margin-left: 50px; }
+    width: 80%; }
     .secondary-nav .navbutton:hover {
       background-color: rgba(255, 255, 255, 0.25); }
 
@@ -1885,8 +1884,6 @@ nav {
 #toolbelt .toolbelt-img {
   max-height: 140px;
   border: 0px; }
-#toolbelt .tool {
-  min-height: 140px; }
 #toolbelt .helper {
   display: inline-block;
   height: 100%;
@@ -2041,7 +2038,8 @@ div.owl-dot {
     border: 1px solid #FFF;
     border-radius: 2px;
     margin-right: 0px;
-    margin-left: 0px; }
+    margin-left: 0px;
+    width: 100%; }
   .secondary-nav .nav-list > li {
     display: inline-block;
     padding-right: 5px;

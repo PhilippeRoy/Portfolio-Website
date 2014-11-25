@@ -256,8 +256,7 @@ nav {
         padding: 12px 22px;
         border: 1px solid #FFF;
         border-radius: 2px;
-        margin-right: 50px;
-        margin-left: 50px;
+        width: 80%;
 
 
 
@@ -363,7 +362,7 @@ nav {
   }
 
   .tool {
-    min-height: 140px;
+    //min-height: 140px;
   }
 
   .helper {
@@ -598,6 +597,8 @@ div.owl-dot {
         border-radius: 2px;
         margin-right: 0px;
         margin-left: 0px;
+        width: 100%;
+
     }
 
     .nav-list {

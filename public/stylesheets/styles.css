@@ -123,7 +123,8 @@
 :root .fa-rotate-270,
 :root .fa-flip-horizontal,
 :root .fa-flip-vertical {
-  filter: none; }
+  -webkit-filter: none;
+          filter: none; }
 
 .fa-stack {
   position: relative;
@@ -1750,7 +1751,6 @@ hr {
   text-align: left;
   list-style: none;
   background-color: #FAF7F5;
-  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   border: 0px;
   border-radius: 0px;
@@ -1839,6 +1839,7 @@ nav {
    ========================================================================== */
 #intro {
   height: 100vh;
+  background-image: -webkit-linear-gradient(290deg, #C23B22 10%, #FF6961 80%);
   background-image: linear-gradient(160deg, #C23B22 10%, #FF6961 80%);
   position: relative; }
   #intro h1, #intro h2 {
@@ -1870,6 +1871,7 @@ nav {
   text-align: justify; }
 
 #things {
+  background-image: -webkit-linear-gradient(290deg, #FAF7F5 30%, rgba(251, 248, 245, 0) 82%);
   background-image: linear-gradient(160deg, #FAF7F5 30%, rgba(251, 248, 245, 0) 82%);
   border-bottom: 1px solid #DBD9D5;
   border-top: 1px solid #DBD9D5; }
@@ -1891,6 +1893,7 @@ nav {
   vertical-align: middle; }
 
 #contact {
+  background-image: -webkit-linear-gradient(290deg, #C23B22 10%, #FF6961 80%);
   background-image: linear-gradient(160deg, #C23B22 10%, #FF6961 80%);
   color: white; }
   #contact a {
@@ -1946,12 +1949,7 @@ nav {
   display: block;
   -webkit-backface-visibility: visible;
   -webkit-transition: opacity 200ms ease;
-  -moz-transition: opacity 200ms ease;
-  -ms-transition: opacity 200ms ease;
-  -o-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
   border-radius: 30px; }
 
 div.owl-dot {
@@ -1968,8 +1966,6 @@ div.owl-dot {
   background: #FF6961;
   display: inline-block;
   cursor: pointer;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
   border-radius: 2px; }
 
 /* ==========================================================================
@@ -2133,5 +2129,3 @@ div.owl-dot {
   border-bottom: 1px solid #eee !important;
   padding-bottom: 40px !important;
   margin-bottom: 40px !important; }
-
-/*# sourceMappingURL=styles.css.map */

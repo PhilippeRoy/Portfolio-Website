@@ -1857,8 +1857,7 @@ nav {
       color: black; }
     #myself .profile-box .circle {
       top: 180px;
-      opacity: 0;
-      display: none; }
+      opacity: 0; }
     #myself .profile-box .summary {
       background: white;
       margin-bottom: 40px;
@@ -1958,6 +1957,21 @@ nav {
 div.owl-dot {
   display: inline-block; }
 
+.owl-theme .owl-controls {
+  margin-top: 20px; }
+
+.owl-theme .owl-controls .owl-nav [class*=owl-] {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #FF6961;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px; }
+
 /* ==========================================================================
  * Animations
    ========================================================================== */
@@ -2051,7 +2065,10 @@ div.owl-dot {
     display: block; }
 
   #contact .fa {
-    display: inline-block; } }
+    display: inline-block; }
+
+  .owl-theme .owl-controls {
+    margin-top: 40px; } }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1400px) {
   .intro {
@@ -2099,18 +2116,22 @@ div.owl-dot {
 /* ==========================================================================
  * No Js
    ==========================================================================*/
-noscript .nav-list {
+.no-js .nav-list {
   padding-left: 0 !important;
   margin-left: -5px !important;
   list-style: none !important; }
-  noscript .nav-list > li {
+  .no-js .nav-list > li {
     margin-bottom: 20px !important;
     opacity: 1 !important; }
-noscript .down-arrow {
+.no-js .down-arrow {
   opacity: 1 !important; }
-noscript .circle {
+.no-js .circle {
   top: 0px !important;
   opacity: 1 !important;
   display: block !important; }
+.no-js #portfolio-carousel .row {
+  border-bottom: 1px solid #eee !important;
+  padding-bottom: 40px !important;
+  margin-bottom: 40px !important; }
 
 /*# sourceMappingURL=styles.css.map */

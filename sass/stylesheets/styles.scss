@@ -308,7 +308,6 @@ nav {
     .circle {
       top: 180px;
       opacity: 0;
-      display: none;
     }
     .summary {
       background: white;
@@ -477,6 +476,24 @@ div.owl-dot {
   display: inline-block;
 }
 
+.owl-theme .owl-controls {
+  margin-top: 20px;
+}
+
+.owl-theme .owl-controls .owl-nav [class*=owl-] {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: $light-red-pastel;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+
+
 /* ==========================================================================
  * Animations
    ========================================================================== */
@@ -621,6 +638,11 @@ div.owl-dot {
     }
   }
 
+
+  .owl-theme .owl-controls {
+    margin-top: 40px;
+  }
+
 }
 
 /* Large Devices, Wide Screens */
@@ -641,20 +663,19 @@ div.owl-dot {
  * No Js
    ==========================================================================*/
 
-noscript {
+.no-js {
 
+  .nav-list {
+    padding-left: 0 !important;
+    margin-left: -5px !important;
+    list-style: none !important;
 
-    .nav-list {
-      padding-left: 0 !important;
-      margin-left: -5px !important;
-      list-style: none !important;
+    &>li {
+      margin-bottom: 20px !important;
+      opacity: 1 !important;
 
-      &>li {
-        margin-bottom: 20px !important;
-        opacity: 1 !important;
-
-      }
     }
+  }
 
   .down-arrow{
     opacity: 1 !important;
@@ -666,4 +687,15 @@ noscript {
     opacity: 1 !important;
     display: block !important;
   }
+
+  #portfolio-carousel {
+
+    .row {
+      border-bottom: 1px solid #eee !important;
+      padding-bottom: 40px !important;
+      margin-bottom: 40px !important;
+    }
+
+  }
+
 }

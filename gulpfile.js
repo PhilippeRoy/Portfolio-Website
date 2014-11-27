@@ -32,7 +32,7 @@ gulp.task('autoprefixer', function () {
 //   });
 gulp.task('concat-css', function() {
   gulp.src(__dirname + '/public/stylesheets/*.css')
-  .pipe(concat('styles.min.js'))
+  .pipe(concat('styles.min.css'))
   .pipe(gulp.dest(__dirname + '/public/stylesheets/production/'))
 });
 

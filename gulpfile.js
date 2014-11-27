@@ -7,6 +7,22 @@ var gulp = require('gulp'),
 
 
 // CSS
+
+gulp.task('css', function() {
+  gulp.src(__dirname + '/sass/stylesheets/*.scss')
+  .pipe(sass({
+    outputStyle: 'compressed',
+    sync: true
+  }))
+  .pipe(autoprefixer({
+    cascade: false
+  }))
+  .pipe(concat('styles.min.css'))
+  .pipe(gulp.dest(__dirname + '/public/stylesheets/production/'));
+});
+
+
+
 gulp.task('sass', function() {
     gulp.src(__dirname + '/sass/stylesheets/*.scss')
     .pipe(sass({
@@ -25,12 +41,12 @@ gulp.task('autoprefixer', function () {
     .pipe(gulp.dest(__dirname + '/public/stylesheets/'));
   });
 
-
 // gulp.task('minify-css', function() {
 //    gulp.src(__dirname + '/public/stylesheets/*.css')
 //    .pipe(minifyCSS({keepBreaks:false}))
 //    .pipe(gulp.dest(__dirname + '/public/stylesheets/'));
 //   });
+
 gulp.task('concat-css', function() {
   gulp.src(__dirname + '/public/stylesheets/*.css')
   .pipe(concat('styles.min.css'))
@@ -52,6 +68,6 @@ gulp.task('compress', function() {
     .pipe(gulp.dest(__dirname + '/public/javascripts/production/'))
   });
 
-gulp.task('sassy', ['sass']);
-
+// Tasks
+gulp.task('short', ['css','concat-scripts', 'compress']);
 gulp.task('default', ['sass','autoprefixer','concat-css','concat-scripts', 'compress']);

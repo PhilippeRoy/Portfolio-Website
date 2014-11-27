@@ -33,13 +33,13 @@ gulp.task('minify-css', function() {
 
 // JS
 gulp.task('concat-scripts', function() {
-    gulp.src(__dirname + '/public/javascripts/*.js')
+    gulp.src(__dirname + '/public/javascripts/development/*.js')
     .pipe(concat('bundle.min.js', {newLine: ';'}))
-    .pipe(gulp.dest(__dirname + '/public/javascripts/'))
+    .pipe(gulp.dest(__dirname + '/public/javascripts/production/'))
   });
 
 gulp.task('compress', function() {
-    gulp.src(__dirname + '/public/javascripts/bundle.min.js')
+    gulp.src(__dirname + '/public/javascripts/production/bundle.min.js')
     .pipe(uglify())
     .pipe(gulp.dest(__dirname + '/public/javascripts/production/'))
   });

@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    minifyCSS = require('gulp-minify-css'),
+//    minifyCSS = require('gulp-minify-css'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify');
 
@@ -25,11 +25,18 @@ gulp.task('autoprefixer', function () {
   });
 
 
-gulp.task('minify-css', function() {
-   gulp.src(__dirname + '/public/stylesheets/*.css')
-   .pipe(minifyCSS({keepBreaks:false}))
-   .pipe(gulp.dest(__dirname + '/public/stylesheets/'));
-  });
+// gulp.task('minify-css', function() {
+//    gulp.src(__dirname + '/public/stylesheets/*.css')
+//    .pipe(minifyCSS({keepBreaks:false}))
+//    .pipe(gulp.dest(__dirname + '/public/stylesheets/'));
+//   });
+gulp.task('concat-css', function() {
+  gulp.src(__dirname + '/public/stylesheets/*.css')
+  .pipe(concat('styles.min.js'))
+  .pipe(gulp.dest(__dirname + '/public/stylesheets/production/'))
+});
+
+
 
 // JS
 gulp.task('concat-scripts', function() {
@@ -44,4 +51,4 @@ gulp.task('compress', function() {
     .pipe(gulp.dest(__dirname + '/public/javascripts/production/'))
   });
 
-gulp.task('default', ['sass','autoprefixer','minify-css','concat-scripts', 'compress']);
+gulp.task('default', ['sass','concat-css','autoprefixer','concat-scripts', 'compress']);

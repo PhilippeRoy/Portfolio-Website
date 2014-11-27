@@ -1,3 +1,8 @@
+/*!
+*  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+*  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+*/
+
 @import "font-awesome/variables";
 @import "font-awesome/mixins";
 @import "font-awesome/path";
@@ -11,10 +16,14 @@
 @import "font-awesome/stacked";
 @import "font-awesome/icons";
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
+/*!
+*  Philippe Roy Styles
+*/
+
+@import url("http://fonts.googleapis.com/css?family=Lato:300");
 
 
-$font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", "Lato", Helvetica, Arial, "Lucida Grande", sans-serif;
 $dark-red-pastel : #C23B22;
 $light-red-pastel : #FF6961;
 
@@ -81,14 +90,15 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {
+.uneditable-input:focus,
+button:focus {
   border-color: none;
   box-shadow: none;
   -webkit-box-shadow: none;
   border-color: rgba(255, 255, 255, 0.8);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 13, 14, 0.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 13, 14, 0.6);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 13, 14, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255, 255, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255, 255, 0.6);
   outline: 0;
   outline: thin dotted \9; /* IE6-9 */
   outline-color: #fff;

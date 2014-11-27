@@ -35,13 +35,13 @@ gulp.task('minify-css', function() {
 gulp.task('concat-scripts', function() {
     gulp.src(__dirname + '/public/javascripts/development/*.js')
     .pipe(concat('bundle.min.js', {newLine: ';'}))
-    .pipe(gulp.dest(__dirname + '/public/javascripts/production/'))
+    .pipe(gulp.dest(__dirname + '/public/javascripts/development/concat/'))
   });
 
 gulp.task('compress', function() {
-    gulp.src(__dirname + '/public/javascripts/production/bundle.min.js')
+    gulp.src(__dirname + '/public/javascripts/development/concat/bundle.min.js')
     .pipe(uglify())
     .pipe(gulp.dest(__dirname + '/public/javascripts/production/'))
   });
 
-gulp.task('default', ['sass','autoprefixer', 'minify-css', 'concat-scripts', 'compress']);
+gulp.task('default', ['sass','autoprefixer','minify-css','concat-scripts', 'compress']);

@@ -573,7 +573,7 @@ div.owl-dot {
 .fadeIn{
    -webkit-animation: fadeIn 1s; /* Chrome, Safari, Opera */
    animation: fadeIn 1s;
-   opacity: 1 !important;
+   animation-fill-mode: forwards;
 }
 
 /* Chrome, Safari, Opera */

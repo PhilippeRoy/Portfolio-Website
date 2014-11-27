@@ -10,7 +10,8 @@ var gulp = require('gulp'),
 gulp.task('sass', function() {
     gulp.src(__dirname + '/sass/stylesheets/*.scss')
     .pipe(sass({
-      outputStyle: 'compressed'
+      outputStyle: 'compressed',
+      sync: true
     }))
     .pipe(gulp.dest(__dirname + '/public/stylesheets/'));
   });
@@ -51,4 +52,6 @@ gulp.task('compress', function() {
     .pipe(gulp.dest(__dirname + '/public/javascripts/production/'))
   });
 
-gulp.task('default', ['sass','concat-css','autoprefixer','concat-scripts', 'compress']);
+gulp.task('sassy', ['sass']);
+
+gulp.task('default', ['sass','autoprefixer','concat-css','concat-scripts', 'compress']);

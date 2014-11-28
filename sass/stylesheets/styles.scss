@@ -47,6 +47,8 @@ h2, h3, h4, .h4 {
     margin-bottom: 20px;
 }
 
+
+
 a {
 
     color: white;
@@ -416,29 +418,135 @@ nav {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
- }
- h3 {
-   margin-bottom: 0px;
-   a {
+  }
+  h3 {
+    margin-bottom: 0px;
+    a {
 
-     color: black;
+      color: black;
 
-     &:hover {
-       color: $light-red-pastel;
-     }
+      &:hover {
+        color: $light-red-pastel;
+      }
 
-     &:visited{
-       text-decoration: none;
-     }
-     &:focus{
-       text-decoration: none;
+      &:visited{
+        text-decoration: none;
+      }
+      &:focus{
+        text-decoration: none;
+      }
+    }
+  }
+
+
+ #otherTricks {
+   margin-top: 20px;
+
+   ul {
+     padding: 0;
+     list-style-type: none;
+     font-weight: 200;
+
+     li{
+       text-align: left;
+
+       img{
+         margin-top: 5px;
+
+       }
+
+       span.icon {
+         width: 50px;
+         height: 50px;
+         display: inline-block;
+         vertical-align: middle;
+         margin-top: 5px;
+         margin-right: 20px;
+       }
      }
    }
- }
+
+   .icon {
+     font-size: 10px;
+   }
+
+   .icon:before {
+     content:' ';
+     vertical-align:middle;
+     display: inline-block;
+     background-image: url("/images/sprite.svg");
+     background-repeat: no-repeat;
+     background-size: 5em 50em;
+   }
+
+   .no-svg .icon:before {
+     background-image: url("/images/sprite.png");
+   }
+
+   .icon.angular:before {
+     background-position: 0em 0em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.backboneJS:before {
+     background-position: 0em -5em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.grunt:before {
+     background-position: 0em -10em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.jQuery:before {
+     background-position: 0em -15em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.mySQL:before {
+     background-position: 0em -20em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.phonegap:before {
+     background-position: 0em -25em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.processing:before {
+     background-position: 0em -30em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.redit:before {
+     background-position: 0em -35em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.sass:before {
+     background-position: 0em -40em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.vagrant:before {
+     background-position: 0em -45em;
+     width: 5em;
+     height: 5em;
+   }
 
 
- #collapseOne {
-   display: none;
+
+
+
  }
 }
 

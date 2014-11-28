@@ -61,8 +61,8 @@ $(document).ready(function() {
 
   PR_();
 
-$('#otherTricks').on('click', function () {
-  $( "#collapseOne" ).slideToggle( "slow", function() {
+$('#otherTricksSwitch').on('click', function () {
+  $( "#otherTricks" ).slideToggle( "slow", function() {
     // Animation complete.
   });
 });

@@ -435,6 +435,11 @@ nav {
      }
    }
  }
+
+
+ #collapseOne {
+   display: none;
+ }
 }
 
 // Contact
@@ -582,8 +587,6 @@ div.owl-dot {
    -webkit-animation: slideDown 1s; /* Chrome, Safari, Opera */
    animation: slideDown 1s;
    opacity: 1 !important;
-
-
 }
 
 /* Chrome, Safari, Opera */

@@ -28,15 +28,13 @@ $dark-red-pastel : #C23B22;
 $light-red-pastel : #FF6961;
 
 /* ==========================================================================
- * Globals Base
+ * Globals Layout
    ========================================================================== */
 body {
   position: relative;
   font-family: $font-family;
   text-align: center;
   color: black;
-
-
 
   }
 
@@ -107,6 +105,10 @@ button:focus {
 /* ==========================================================================
  * Globals Compents
    ========================================================================== */
+
+.red {
+  color: $light-red-pastel;
+}
 .down-arrow {
   border-color: #FFF;
   border-width: 2px;
@@ -196,6 +198,11 @@ button:focus {
   width: 94px;
   height: 94px;
   margin: 0 auto;
+}
+
+
+hr.copywrite {
+  margin-bottom: 20px;
 }
 /* ==========================================================================
  * Navigation
@@ -410,6 +417,24 @@ nav {
     height: 100%;
     vertical-align: middle;
  }
+ h3 {
+   margin-bottom: 0px;
+   a {
+
+     color: black;
+
+     &:hover {
+       color: $light-red-pastel;
+     }
+
+     &:visited{
+       text-decoration: none;
+     }
+     &:focus{
+       text-decoration: none;
+     }
+   }
+ }
 }
 
 // Contact
@@ -479,8 +504,12 @@ nav {
 
   .copywrite {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 200;
+
+    hr {
+      margin-bottom: 10px;
+    }
   }
 
 }

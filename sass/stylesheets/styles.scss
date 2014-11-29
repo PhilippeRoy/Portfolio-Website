@@ -818,6 +818,7 @@ div.owl-dot {
   #intro {
      height: 1024px;
   }
+
 }
 
 // iPad in landscape
@@ -840,13 +841,6 @@ div.owl-dot {
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
-
-
-
-  .owl-stage-outer {
-    height: 450px;
-  }
 
 
   .secondary-nav {
@@ -879,7 +873,9 @@ div.owl-dot {
     }
   }
 
-
+  .owl-stage-outer {
+    height: 450px;
+  }
   .owl-theme .owl-controls {
     margin-top: 40px;
   }

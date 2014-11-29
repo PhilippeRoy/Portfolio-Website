@@ -32,7 +32,7 @@ app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-    var err = new Error('Don\'t go there man...');
+    var err = new Error('Let\'s get lost together');
     err.status = 404;
     next(err);
 });

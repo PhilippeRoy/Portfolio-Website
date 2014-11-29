@@ -1,0 +1,336 @@
+{{> header}}
+<script>document.getElementsByTagName("body")[0].className = "";</script>
+
+<div id="fullpage">
+		<nav class="navbar navbar-default" role="navigation"  id="primary-nav">
+			<div class="container">
+			  <!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/#intro">Philippe Roy</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown active">
+							<a href="/#myself" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">myself <i class="fa fa-angle-down hidden-xs hidden-sm"></i></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="/#skills">skills</a></li>
+								<li><a href="/#work">work</a></li>
+								<li><a href="/#education">education</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#things" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">a few things <i class="fa fa-angle-down hidden-xs hidden-sm"></i></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="/#toolbelt">toolbelt</a></li>
+								<li><a href="/someMoreThings#">some more things</a></li>
+							</ul>
+						</li>
+						<li><a href="/#contact">contact</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!-- /.container-fluid -->
+		</nav>
+
+	<section id="intro">
+	  <div class="container">
+			<div class="intro">
+	      <div class="row">
+					<div class="col-xs-12">
+						<div class="">
+							<h1>{{name}}</h1>
+							<h2>{{title}}</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row secondary-nav">
+					<ul id="intro-menu" class="nav-list ">
+						<li >
+							<a href="#myself">
+								<button class="navbutton">
+								myself
+							  </button>
+							</a>
+						</li>
+						<li >
+							<a href="#things">
+								<button class="navbutton">
+									a few things
+								</button>
+							</a>
+						</li>
+						<li >
+							<a href="#contact">
+								<button class="navbutton">
+									contact
+								</button>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="row bottom secondary-nav">
+					<div class="col-xs-12 visible-md-block visible-lg-block">
+						<div class="down-arrow">
+							<a href="#myself">
+								<i class="fa fa-angle-down"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+  </section>
+	<section id="myself" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-8">
+				  <h2>Hello</h2>
+          <hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-10">
+					<img class="img-responsive center-block img-circle"  src="/images/profile.jpg" alt="Philippe Roy " />
+					<div class="row">
+						<div class="col-sm-2 hidden-xs"></div>
+						<div class="col-xs-12 col-sm-8">
+							<article>
+								<section class="bio">
+								  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>								</section>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-8"><hr></div>
+			</div>
+			<div id="profile" class="row">
+				<div id="skills" class="col-sm-4 profile-box">
+					<div id="circle-ninja" class="circle"><img class="icon" src="/images/svg/ninja.svg" alt="Icon: Ninja Skills" /></div>
+					<div class="col-xs-12 summary">
+					<h2>Skills</h2>
+						<ul>
+							<li><span class="black">Web development (HTML5, CSS3, JavaScript, PHP)</span></li>
+							<li><span class="black">C, Arduino, Processing, UN*X, OOP-fundamentals</span></li>
+							<li><span class="black">UX/UI Design and Development</span></li>
+							<li><span class="black">Experience in Adobe Suites, Final Cut Studio</span></li>
+						</ul>
+					</div>
+				</div>
+				<div id="work" class="col-sm-4 profile-box">
+					<div id="circle-graduate" class="circle"><img class="icon" src="/images/svg/graduate.svg" alt="Icon: Graduate" /></div>
+					<div class="col-xs-12 summary">
+						<h2>Work</h2>
+						<ul>
+							<li><span class="black">Developed interactive digital clothing for youth in athletics, fashion and art practices</span></li>
+							<li><span class="black">Designed and developed New Media installations</span></li>
+							<li><span class="black">Application architect and software developer of Augmented Reality App</span></li>
+						</ul>
+					</div>
+				</div>
+				<div id="education" class="col-sm-4 profile-box">
+					<div id="circle-business" class="circle"><img class="icon" src="/images/svg/worker.svg" alt="Icon: Business Man" /></div>
+				  <div class="col-xs-12 summary">
+						<h2>Education</h2>
+						<ul>
+							<li><span class="black">Bachelors Degree in New Media - Creative Digital Media Studies</span></li>
+							<li><span class="black">Ryerson University (Toronto, Canada)</span></li>
+							<li><span class="black">Royal Melbourne Institute of Technology (Melbourne, Australia)</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+  <section id="things" class="section">
+	  <div class="container">
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-8">
+					<h2>A Few Things</h2>
+					<hr>
+				</div>
+			</div>
+		</div>
+			<div id="portfolio-carousel" class="owl-carousel">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-1"></div>
+						<div class="col-xs-5">
+							<img class="img-responsive" src="/images/iPhone-5-White-the-wether-channel.png" alt="...">
+						</div>
+						<div class="col-xs-5">
+							<div class="">
+								<h2>Weather App</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiuecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+						<div class="col-xs-1"></div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<img class="img-responsive" src="/images/minetanWebsite.jpg" alt="minetan spaytan website">
+						</div>
+						<div class="col-md-1">	</div>
+						<div class="col-md-4">
+							<div class="">
+								<h2>MineTan</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<img class="img-responsive" src="/images/blackCaviar.jpg" alt="...">
+						</div>
+						<div class="col-md-4 col-md-pull-5">
+							<div class="">
+								<h2>Yee HAA!</h2>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+						</div>
+				</div>
+			</div>
+	  </div>
+		<div class="container moreThings">
+			<div class="row">
+				<div class="col-xs-12">
+					<h3><a href="#">some more things</a></h3>
+				</div>
+			</div>
+		</div>
+  </section>
+	<section id="toolbelt" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Toolbelt</h2>
+					<p>The right tool for the right job</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-2"></div>
+				<div class="col-xs-8"><hr></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="toolbelt-img img-responsive img-thumbnail" src="/images/svg/HTML5_logo.svg" alt="HTML5" >
+					<h4>HTML5</h4>
+				</div>
+				<div class="col-xs-4">
+					<img class="toolbelt-img img-responsive img-thumbnail" src="/images/svg/css3.svg" alt="CSS3" >
+					<h4>CSS3</h4>
+				</div>
+				<div class="col-xs-4">
+					<img class="toolbelt-img img-responsive img-thumbnail" src="/images/svg/javascript.svg" alt="JavaScript" >
+					<h4>JS</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="toolbelt-img img-responsive img-thumbnail" src="/images/svg/git.svg" alt="Git" >
+					<h4>GIT</h4>
+				</div>
+				<div class="col-xs-4">
+					<img class="toolbelt-img img-responsive img-thumbnail" src="/images/svg/node.js.svg" alt="NodeJS" >
+					<h4>NodeJS</h4>
+				</div>
+				<div class="col-xs-4">
+					<img class="toolbelt-img img-responsive img-thumbnail" src="/images/svg/mongoDB.svg" alt="MongoDB" >
+					<h4>MongoDB</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4">
+					<img class="toolbelt-img img-responsive img-thumbnail" src="/images/svg/bootstrap.svg" alt="Bootstrap" >
+					<h4>Bootstrap</h4>
+				</div>
+				<div class="col-xs-4">
+					<img class="toolbelt-img img-responsive img-thumbnail" src="/images/svg/wordpress.svg" alt="Wordpress" >
+					<h4>Worpress</h4>
+				</div>
+				<div class="col-xs-4">
+					<img class="toolbelt-img img-responsive img-thumbnail" src="/images/svg/php.svg" alt="PHP" >
+				  <h4>PHP</h4>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h3><a href="#">other tricks of the trade <span class="red"><i class="fa fa-angle-down"></span></a></i>
+					</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+  <section id="contact" class="">
+  	<div class="container">
+      <div class="row">
+			  <div class="col-xs-12">
+				  <h1>Get In Touch</h1>
+			  </div>
+			</div>
+			<div class="row">
+			  <div class="col-xs-12">
+					  <h3><i class="fa fa-envelope"></i><a href="mailto:philippe.j.roy@gmail.com"> philippe.j.roy@gmail.com</a></h3>
+					  <h3><i class="fa fa-linkedin-square"></i> <a href="http://au.linkedin.com/in/philippejroy">au.linkedin.com/in/philippejroy</a></h3>
+						<h3><i class="fa fa-github"></i> <a href="https://github.com/PhilippeRoy">github.com/PhilippeRoy</a></h3>
+			  </div>
+		  </div>
+			<div class="copywrite hidden-md hidden-lg">&copy; 2014 Philippe Roy</div>
+
+		</div>
+  </section>
+	<section id="siteMap" class="section hidden-xs hidden-sm">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-1"></div>
+				<div class="col-xs-5">
+					<h3>Philippe Roy</h3>
+				</div>
+				<div class="col-xs-2">
+					<ul>
+						<li><a href="#myself">myself</a></li>
+						<li><a href="#skills">skills</a></li>
+						<li><a href="#work">work</a></li>
+						<li><a href="#education">education</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-2">
+					<ul>
+						<li><a href="#things">a few things</a></li>
+						<li><a href="#toolbelt">toolbelt</a></li>
+						<li><a href="#">some more things</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-2">
+					<ul>
+						<li><a href="#contact">contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-5"></div>
+				<div class="col-xs-2 copywrite">
+					<hr>
+					&copy; 2014 Philippe Roy
+				</div>
+			</div>
+
+	</div>
+</section>
+</div>
+
+{{> footer}}

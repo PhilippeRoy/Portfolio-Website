@@ -22,7 +22,7 @@ $(document).ready(function() {
     autoplay: true,
     autoplayHoverPause: true,
     smartSpeed: 1000,
-    nav: true 
+    nav: true
   });
 
 
@@ -60,6 +60,13 @@ $(document).ready(function() {
 
 
   PR_();
+
+$('#otherTricksSwitch').on('click', function () {
+  $( "#otherTricks" ).slideToggle( "slow", function() {
+    // Animation complete.
+  });
+});
+
 
 });
 

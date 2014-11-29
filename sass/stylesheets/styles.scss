@@ -1,3 +1,8 @@
+/*!
+*  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+*  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+*/
+
 @import "font-awesome/variables";
 @import "font-awesome/mixins";
 @import "font-awesome/path";
@@ -11,23 +16,25 @@
 @import "font-awesome/stacked";
 @import "font-awesome/icons";
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300);
+/*!
+*  Philippe Roy Styles
+*/
+
+@import url("http://fonts.googleapis.com/css?family=Lato:300");
 
 
-$font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial, "Lucida Grande", sans-serif;
+$font-family : "Helvetica Neue", "HelveticaNeue-Light", "Helvetica Neue Light", "Lato", Helvetica, Arial, "Lucida Grande", sans-serif;
 $dark-red-pastel : #C23B22;
 $light-red-pastel : #FF6961;
 
 /* ==========================================================================
- * Globals Base
+ * Globals Layout
    ========================================================================== */
 body {
   position: relative;
   font-family: $font-family;
   text-align: center;
   color: black;
-
-
 
   }
 
@@ -39,6 +46,8 @@ h2, h3, h4, .h4 {
     font-weight: 100;
     margin-bottom: 20px;
 }
+
+
 
 a {
 
@@ -81,14 +90,15 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {
+.uneditable-input:focus,
+button:focus {
   border-color: none;
   box-shadow: none;
   -webkit-box-shadow: none;
   border-color: rgba(255, 255, 255, 0.8);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 13, 14, 0.6);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 13, 14, 0.6);
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(192, 13, 14, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255, 255, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 255, 255, 0.6);
   outline: 0;
   outline: thin dotted \9; /* IE6-9 */
   outline-color: #fff;
@@ -97,6 +107,10 @@ input[type="color"]:focus,
 /* ==========================================================================
  * Globals Compents
    ========================================================================== */
+
+.red {
+  color: $light-red-pastel;
+}
 .down-arrow {
   border-color: #FFF;
   border-width: 2px;
@@ -186,6 +200,11 @@ input[type="color"]:focus,
   width: 94px;
   height: 94px;
   margin: 0 auto;
+}
+
+
+hr.copywrite {
+  margin-bottom: 20px;
 }
 /* ==========================================================================
  * Navigation
@@ -399,6 +418,135 @@ nav {
     display: inline-block;
     height: 100%;
     vertical-align: middle;
+  }
+  h3 {
+    margin-bottom: 0px;
+    a {
+
+      color: black;
+
+      &:hover {
+        color: $light-red-pastel;
+      }
+
+      &:visited{
+        text-decoration: none;
+      }
+      &:focus{
+        text-decoration: none;
+      }
+    }
+  }
+
+
+ #otherTricks {
+   margin-top: 20px;
+
+   ul {
+     padding: 0;
+     list-style-type: none;
+     font-weight: 200;
+
+     li{
+       text-align: left;
+
+       img{
+         margin-top: 5px;
+
+       }
+
+       span.icon {
+         width: 50px;
+         height: 50px;
+         display: inline-block;
+         vertical-align: middle;
+         margin-top: 5px;
+         margin-right: 20px;
+       }
+     }
+   }
+
+   .icon {
+     font-size: 10px;
+   }
+
+   .icon:before {
+     content:' ';
+     vertical-align:middle;
+     display: inline-block;
+     background-image: url("/images/sprite.svg");
+     background-repeat: no-repeat;
+     background-size: 5em 50em;
+   }
+
+   .no-svg .icon:before {
+     background-image: url("/images/sprite.png");
+   }
+
+   .icon.angular:before {
+     background-position: 0em 0em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.backboneJS:before {
+     background-position: 0em -5em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.grunt:before {
+     background-position: 0em -10em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.jQuery:before {
+     background-position: 0em -15em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.mySQL:before {
+     background-position: 0em -20em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.phonegap:before {
+     background-position: 0em -25em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.processing:before {
+     background-position: 0em -30em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.redit:before {
+     background-position: 0em -35em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.sass:before {
+     background-position: 0em -40em;
+     width: 5em;
+     height: 5em;
+   }
+
+   .icon.vagrant:before {
+     background-position: 0em -45em;
+     width: 5em;
+     height: 5em;
+   }
+
+
+
+
+
  }
 }
 
@@ -469,8 +617,12 @@ nav {
 
   .copywrite {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 200;
+
+    hr {
+      margin-bottom: 10px;
+    }
   }
 
 }
@@ -543,8 +695,6 @@ div.owl-dot {
    -webkit-animation: slideDown 1s; /* Chrome, Safari, Opera */
    animation: slideDown 1s;
    opacity: 1 !important;
-
-
 }
 
 /* Chrome, Safari, Opera */

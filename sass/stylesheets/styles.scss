@@ -232,7 +232,7 @@ nav {
 
   .navbar-brand {
     color: black;
-    font-weight: 100;
+    font-weight: 200;
     font-size: 25px;
   }
 
@@ -299,6 +299,10 @@ nav {
       margin-bottom: 20px;
       opacity: 0;
 
+      button {
+        font-weight: 300;
+      }
+
     }
   }
 
@@ -335,8 +339,8 @@ nav {
     color: white;
   }
 
-.visible-md-block, .visible-lg-block {
-  display: block !important;
+  .visible-md-block, .visible-lg-block {
+    display: block !important;
 
 }
 
@@ -798,9 +802,47 @@ div.owl-dot {
 /* ==========================================================================
  * Media Queries
    ==========================================================================*/
+// iPad in portrait
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* STYLES GO HERE */
+
+  h1, h2, h3, h4, .h4 {
+      font-weight: 200;
+  }
+
+  .bottom {
+    bottom:20%;
+  }
+
+  #intro {
+     height: 1024px;
+  }
+}
+
+// iPad in landscape
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+   /* STYLES GO HERE */
+
+  h1, h2, h3, h4, .h4 {
+     font-weight: 200;
+  }
+
+  .bottom {
+    bottom:20%;
+  }
+
+  #intro {
+    height: 768px;
+  }
+}
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+
+
+
 
   .owl-stage-outer {
     height: 450px;

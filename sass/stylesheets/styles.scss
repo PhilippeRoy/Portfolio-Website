@@ -1,4 +1,4 @@
-/*!
+/*
 *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
 *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 */
@@ -16,7 +16,7 @@
 @import "font-awesome/stacked";
 @import "font-awesome/icons";
 
-/*!
+/*
 *  Philippe Roy Styles
 */
 
@@ -45,6 +45,11 @@ h1 {
 h2, h3, h4, .h4 {
     font-weight: 100;
     margin-bottom: 20px;
+}
+
+.h4 {
+  font-weight: 200;
+
 }
 
 
@@ -111,7 +116,9 @@ button:focus {
 .red {
   color: $light-red-pastel;
 }
+
 .down-arrow {
+  background: $light-red-pastel;
   border-color: #FFF;
   border-width: 2px;
   border-style: solid;
@@ -126,8 +133,10 @@ button:focus {
 
 
   &:hover {
-    background-color:rgba(255, 255, 255, 0.25)
+    background-color:rgba(255, 255, 255, 0.25);
+    color: white;
   }
+
 }
 
 .bottom {
@@ -232,7 +241,7 @@ nav {
 
   .navbar-brand {
     color: black;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 25px;
   }
 
@@ -391,9 +400,8 @@ nav {
   background-image: linear-gradient(160deg,#FAF7F5 30%,rgba(251,248,245,0) 82%);
   border-bottom: 1px solid #DBD9D5;
   border-top: 1px solid #DBD9D5;
+  font-weight: 200;
 
-
-  .moreThings {
 
     a {
 
@@ -411,7 +419,6 @@ nav {
       }
     }
 
-  }
 }
 
 // Toolbelt
@@ -820,6 +827,10 @@ div.owl-dot {
      height: 1024px;
   }
 
+  .navbar-brand {
+    font-weight: 200;
+  }
+
 }
 
 // iPad in landscape
@@ -837,6 +848,10 @@ div.owl-dot {
 
   #intro {
     height: 768px;
+  }
+
+  .navbar-brand {
+    font-weight: 200;
   }
 }
 
